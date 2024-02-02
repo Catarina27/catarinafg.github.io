@@ -52,12 +52,9 @@ body::-webkit-scrollbar {
   padding: 20px;
   margin-bottom: 70px;
 }
-.subtitle{
+.subtitle
 
-}
-
-.description{
-}
+.description
 
 .aboutme{
     float: left;
@@ -100,7 +97,7 @@ body::-webkit-scrollbar {
     padding: 10px;
 }
 .projects{
-    float: left;
+    float: right;
     width: 50%;
     padding: 10px;
 }
@@ -222,9 +219,7 @@ button {
   font-style: normal;
   font-size: 3vmin;
 }
-/*
-  
-*/
+
 html,
 body {
   scroll-behavior: smooth;
