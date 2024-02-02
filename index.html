@@ -4,15 +4,102 @@
         <meta charset="utf-8"/>
         <title>Título da Página</title>
         <meta name="viewport" content="width=device-width"/>
-        <style>
-            @import "styles.css" layer (firstLayer);
-        </style>
-        <link rel="alternate" href="https://www.machinelearningworkshop.com/fr/" hreflang="en" />
+        
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="stylesheet" href="CSS/ptTitleStyles.css">
+        <link rel="stylesheet" href="CSS/starsBg.css">
 
+        <link rel="canonical" href="https://catarina27.github.io/catarinafg.github.io/index.html" />
+        <link rel="alternate" href="https://catarina27.github.io/catarinafg.github.io/english.html" hreflang="en-gb" />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     </head>
+ 
     <body>
-        <h1>Olá mundo!</h1>
-        <a href="english.html"><button type="button">English Version</button></a>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        
+        <div class="menu">
+            <a href="#competencias"> <button id="btn" type="button">Competências</button></a>
+            <a href="#projetos"> <button id="btn" type="button">Projetos</button></a>
+            <a href="#contactos"> <button id="btn" type="button">Contactos</button></a>
+            <a href="/docs/dummy.pdf"> <button id="btn" type="button">Currículo</button></a>
+        </div>
+
+        <a href="english.html"><button class="button" data-text="Awesome">
+            <span class="actual-text">&nbsp;En⠀⠀⠀&nbsp;</span>
+            <span aria-hidden="true" class="hover-text">&nbsp;English&nbsp;</span>
+        </button></a>
+
+        <h1 class="center" aria-label="Hi! I'm a developer">
+            Olá! Sou&nbsp;<span class="typewriter"></span>
+        </h1>
+
+    <div class="group">
+        <h2>01.Sobre mim________________</h2>
+        <div class="aboutme"> 
+            <div class="description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nunc sollicitudin urna sit amet molestie iaculis. 
+                Sed nec erat posuere, aliquam ipsum non, egestas nisi.</p>
+            <p>Sed in nulla sed justo tempus tincidunt. 
+                Vestibulum tempor ante a ornare eleifend. 
+                In porttitor diam vitae consequat euismod. 
+                Morbi cursus massa eget ligula eleifend convallis.</p>
+            <p>Phasellus turpis felis, pellentesque quis pharetra vitae, posuere quis nisl. 
+                Maecenas et elit et ex tincidunt aliquam eget faucibus dui. 
+                Morbi consectetur convallis laoreet. 
+                Vestibulum vehicula, felis sit amet lacinia porttitor, augue tellus tristique diam, quis eleifend lacus magna sit amet tortor.</p>  
+            </div>
+        </div>
+        <img class="profileImage" src="/assets/images/dummyPfp.jpg" onload="" alt="Foto de perfil">
+    </div>
+    <div class="group">
+        <div class="center">
+            <h2 id="competencias">02.Competências_____________</h2>
+        </div>
+    </div>
+    <div class="group">
+            <h2 id="projetos">03.Projetos_________________</h2>
+        <div class="project1">
+            <h3> Titulo do projeto 1</h3>
+            <p>Phasellus turpis felis, pellentesque quis pharetra vitae, posuere quis nisl. 
+                Maecenas et elit et ex tincidunt aliquam eget faucibus dui. 
+                Morbi consectetur convallis laoreet. 
+                Vestibulum vehicula, felis sit amet lacinia porttitor, augue tellus tristique diam, quis eleifend lacus magna sit amet tortor.</p>
+            <small>React</small>
+            <small>Java</small>
+            <small>Weather API</small>
+        </div>
+            <img class="projectImage" src="/assets/images/dummyImage.jpg" onload="" alt="Imagem do projeto 1">
+        
+        <div class="project2">
+            <h3> Titulo do projeto 2</h3>
+            <p>Phasellus turpis felis, pellentesque quis pharetra vitae, posuere quis nisl. 
+                Maecenas et elit et ex tincidunt aliquam eget faucibus dui. 
+                Morbi consectetur convallis laoreet. 
+                Vestibulum vehicula, felis sit amet lacinia porttitor, augue tellus tristique diam, quis eleifend lacus magna sit amet tortor.</p>
+            <small>JavaScript</small>
+            <small>HTML</small>
+            <small>CSS</small>
+        </div>
+            <img class="projectImage" src="/assets/images/dummyImage.jpg" onload="" alt="Imagem do projeto 2">
+        
+    </div>
+    <div class="group">
+        <div class="center">
+            <h2 id="contactos">04.Contactos________________</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin urna sit amet molestie iaculis. Sed nec erat posuere, aliquam ipsum non, egestas nisi.</p>
+            <p>Sed in nulla sed justo tempus tincidunt. Vestibulum tempor ante a ornare eleifend. In porttitor diam vitae consequat euismod. Morbi cursus massa eget ligula eleifend.</p>
+            
+            <a class="curriculumButton" href="/docs/dummy.pdf"><button type="button">PDF do Curriculo</button></a>
+            <a href = "mailto: catarina.fe.gomes@gmail.com">catarina.fe.gomes@gmail.com</a>
+        </div>
+    </div>   
+
+    <a href="#" class="top">Para cima &#8593;</a>      
     </body>
-    </html>
+</html>
