@@ -16,6 +16,17 @@ body {
     color: #ffffff;
    }
 
+.column {
+    float: left;
+    width: 25%;
+  }
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 h2{
   overflow-x: hidden;
     font-family: monospace;
@@ -57,21 +68,27 @@ body::-webkit-scrollbar {
 .description
 
 .aboutme{
-    float: left;
-    width: 50%;
-    padding: 10px;
+  float: left;
+  width: 55%;
+  padding: 20px;
 }
 .profileImage{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
 }
 .profileImage:hover{
-    box-shadow: 0 0 5px 1px #6290C3;
+  
+  box-shadow: 0px 0px 20px 10px #ffbb763f;
+  border: 1px solid rgba(255, 255, 255, 0.454);
+  transform: scale(1.1);
 }
+
+
 .habilities{
     float: left;
     width: 50%;
@@ -95,6 +112,10 @@ body::-webkit-scrollbar {
     max-width: 100%;
     height: auto;
     padding: 10px;
+    transition: transform 0.5s ease;
+}
+.projectImage:hover{
+  transform: scale(1.1);
 }
 .projects{
     float: right;
