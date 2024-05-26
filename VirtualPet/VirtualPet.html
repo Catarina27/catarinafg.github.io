@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+<head>
+    <meta charset="utf-8"/>
+    <title>Virtual Pet</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon-nobg.ico">
+
+    <link rel="stylesheet" href="Docs/assets/CSS/styles.css">
+    <link rel="stylesheet" href="Docs/assets/CSS/petGame.css">
+
+
+    <link rel="canonical" href="https://catarina27.github.io/catarinafg.github.io/VirtualPet/VirtualPet.html" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch('docs/assets/content.json')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('greeting').textContent = data.greeting;
+                    document.getElementById('about_me_title').textContent = data.about_me.title;
+                });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="#competencias_title"><button id="btn" type="button">Btn 1</button></a>
+        <a href="#projetos_title"><button id="btn" type="button">Btn 2</button></a>
+        <a href="#contactos_title"><button id="btn" type="button">Btn 3</button></a>
+    </div>
+
+    <a href="index.html"><button class="button" data-text="Awesome">
+        <span class="actual-text">&nbsp;Pt⠀⠀⠀⠀⠀&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Português&nbsp;</span>
+    </button></a>
+
+    <!--================================CABEÇALHO================================-->
+
+    <div id="pet"></div>
+    <div>
+        <p>Hunger: <span id="hungerLevel">10</span></p>
+        <p>Happiness: <span id="happinessLevel">10</span></p>
+        <p>Energy: <span id="energyLevel">50</span></p>
+    </div>
+    <button id="feedBtn">Feed</button>
+    <button id="playBtn">Play</button>
+    <button id="sleepBtn">Sleep</button>
+
+    <script src="/assets/js/script.js"></script>
+
+
+
+
+
+    <!--================================FIM================================-->
+    <div class="container">
+        <p>Feito com <span class="heart">❤️</span> por Catarina Gomes</p>
+        <a href="mailto:catarina.fe.gomes@gmail.com">catarina.fe.gomes@gmail.com</a>
+    </div>
+    
+
+    <a href="#" class="top">Para cima &#8593;</a>      
+</body>
+</html>
